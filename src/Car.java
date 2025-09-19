@@ -4,7 +4,7 @@ public class Car {
         String make = "Honda";
         String model = "Sedan";
         int year = 2025;
-        double price = 58000.99;
+        double price = 58000.89;
         boolean is_running = false;
 
 
