@@ -1,27 +1,29 @@
 public class Car {
 
-    String make = "Ford";
-    String model = "Mustang";
-    int year = 2025;
-    double price = 1999.9;
-    boolean is_running = false;
+    String make;
+    String model;
+    int year;
+    String color;
+    static int num;
 
-    void start(){
-        is_running = true;
-        System.out.println("You start the engine");
+    public Car(String make, String model, int year, String color){
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+        num++;
     }
 
-    void stop(){
-        is_running = false;
-        System.out.println("You stop the engine");
+    static void track(){
+        System.out.println("You have " + num + " Cars");
     }
 
-    void drive(){
-        System.out.println("You drive the " + model);
+    @Override
+    public String toString(){
+        return this.color + " " + this.year + " " + this.make + " " + this.model;
     }
 
-    void brake(){
-        System.out.println("You brake the " + model);
-    }
+
+
 
 }
